@@ -6,7 +6,6 @@ const Topic = ({loadTopic}) => {
     return (
         <div>
             
-            {/* <h1>Name: {logo}</h1> */}
         </div>
     );
 };
