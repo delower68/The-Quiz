@@ -6,7 +6,9 @@ const Header = () => {
     <div>
       <header className="p-4 dark:bg-gray-800 dark:text-gray-100">
         <div className="container flex justify-between h-16 mx-auto">
-          <h1 className="flex items-center font-bold text-3xl">The Quiz</h1>
+          <Link to="/"> 
+           <h1  className="flex items-center font-bold text-3xl">The Quiz</h1>
+          </Link>
           <ul className="items-stretch hidden space-x-3 md:flex">
             <li className="flex">
               <Link

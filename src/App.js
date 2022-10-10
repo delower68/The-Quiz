@@ -14,11 +14,18 @@ function App() {
       children:[
         {
           path:'/blog',
-          element: <Blog/>
+          element: <Blog/>,
+        },
+        {
+          path: '/',
+          element: <Home/>,
+          loader: ()=>fetch('https://openapi.programming-hero.com/api/quiz'),  
+          
         },
         {
           path: '/home',
-          element: <Home/>
+          element: <Home/>,
+          loader: ()=>fetch('https://openapi.programming-hero.com/api/quiz'),  
         }
       ]
     }
