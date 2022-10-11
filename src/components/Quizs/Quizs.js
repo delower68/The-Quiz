@@ -7,8 +7,8 @@ const Quizs = () => {
 
     // console.log(loadQuiz);
     return (
-        <div>
-            <h1>hello</h1>
+        <div className='grid md:grid-cols-3 sm:grid-cols-1 w-full mb-2 dark:bg-gray-700 text-gray-100'>
+            
             {
             loadQuiz.questions.map(quiz => <Quiz
                  key={quiz.id}
