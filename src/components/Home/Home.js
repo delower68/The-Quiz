@@ -4,9 +4,10 @@ import Topic from "../Topic/Topic";
 
 
 const Home = () => {
-    const topics = useLoaderData()
-    const loadTopic= topics.data
-    // console.log( topics.data);
+    const topics = useLoaderData().data
+    // console.log(topics);
+    // const loadTopic= topics.data
+    
     
   return (
     <div>
@@ -45,14 +46,16 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="grid md:grid-cols-4  gap-3 sm:grid-cols-1 p-4 dark:bg-gray-700 text-gray-100 ">
       {
-            loadTopic.map(topic => <Topic
+            topics.map(topic => <Topic
                  key={topic.id}
-                 loadTopic={loadTopic}
+                 topic={topic}
                  >
                  </Topic>)
         }
         
+      </div>
     </div>
   );
 };
