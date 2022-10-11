@@ -36,7 +36,7 @@ const Header = () => {
             </li>
             <li className="flex">
               <Link
-                to="#"
+                to="/statistic"
                 className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
               >
                 Statistic

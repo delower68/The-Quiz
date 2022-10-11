@@ -4,8 +4,10 @@ import Blog from "./components/Blog/Blog";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Home from "./components/Home/Home";
 import Main from "./components/Main/Main";
+import QuestioRechart from "./components/QuetionRechart/QuestioRechart";
 import Quizs from "./components/Quizs/Quizs";
-// import Topic from "./components/Topic/Topic";
+import Topic from "./components/Topic/Topic";
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
   const router = createBrowserRouter([
@@ -34,7 +36,7 @@ function App() {
           loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
         },
         {
-          path: "home/quizs/:id",
+          path: "/quizs/:id",
           loader: async ({ params }) => {
             
             return fetch(
@@ -44,7 +46,7 @@ function App() {
           element: <Quizs />,
         },
         {
-          path: "/topics/home/quizs/:id",
+          path: "/topics/quizs/:id",
           loader: async ({ params }) => {
             
             return fetch(
@@ -53,6 +55,10 @@ function App() {
           },
           element: <Quizs />,
         },
+        {
+          path: '/statistic',
+          element: <QuestioRechart/>,
+        }
       ],
     },
   ]);

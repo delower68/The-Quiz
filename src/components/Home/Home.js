@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import QuestioRechart from "../QuetionRechart/QuestioRechart";
 import Topic from "../Topic/Topic";
 
 
 const Home = () => {
     const topics = useLoaderData().data ;
+    // console.log(topics);
     
   return (
     <div>
@@ -50,7 +52,12 @@ const Home = () => {
                  topic={topic}
                  >
                  </Topic>)
-        }
+      }
+      {
+        topics.map(rechart => <QuestioRechart
+          rechart= {rechart}
+        ></QuestioRechart> )
+      }
         
       </div>
     </div>

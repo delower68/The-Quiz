@@ -2,10 +2,12 @@ import React from 'react';
 import Option from '../Option/Option';
 
 const Quiz = ({quiz}) => {
-    console.log(quiz);
-    // const [question, options , id ]= quiz ;
+    const {correctAnswer} = quiz
+    // console.log(correctAnswer);  
     return (
-        <div className='border   rounded-lg p-10 w-96'>
+        <div>
+            
+            <div className='border   rounded-lg p-10 w-96'>
             <h1><span>Question:{quiz.question}</span></h1>
 
             <div className=''>
@@ -13,10 +15,13 @@ const Quiz = ({quiz}) => {
                 quiz.options.map( option => <Option
                     id= {quiz.id}
                     key= {option}
+                    correctAnswer= {correctAnswer}
                     option={option} 
                 ></Option>)
             }
+            
             </div>
+        </div>
         </div>
     );
 };
