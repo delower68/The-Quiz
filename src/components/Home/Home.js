@@ -53,12 +53,7 @@ const Home = () => {
                  >
                  </Topic>)
       }
-      {
-        topics.map(rechart => <QuestioRechart
-          rechart= {rechart}
-        ></QuestioRechart> )
-      }
-        
+      
       </div>
     </div>
   );
