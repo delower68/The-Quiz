@@ -2,8 +2,8 @@
 * An E-quiz platform for taking high quality Quiz 
 
 ```bash
-Live Link
-Hosted in Netlify -> Smart Home
+Live Link -> 
+Hosted in Netlify -> The Quiz
 ```
 
 ### Context API
