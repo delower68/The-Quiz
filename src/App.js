@@ -6,7 +6,6 @@ import Home from "./components/Home/Home";
 import Main from "./components/Main/Main";
 import QuestioRechart from "./components/QuetionRechart/QuestioRechart";
 import Quizs from "./components/Quizs/Quizs";
-import Topic from "./components/Topic/Topic";
 import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
@@ -58,6 +57,7 @@ function App() {
         {
           path: '/statistic',
           element: <QuestioRechart/>,
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
         }
       ],
     },

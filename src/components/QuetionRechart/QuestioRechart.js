@@ -1,11 +1,13 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
-const QuestioRechart = ({rechart}) => {
-    // console.log(rechart);
-
+const QuestioRechart = () => {
+    // const {total}= rechart  
+    const loadForRechart = useLoaderData()
+    // console.log(loadForRechart.data);
     return (
         <div>
-            {/* <h1>total: {rechart.total}</h1> */}
+            {/* <h1>total: ${total}</h1> */}
         </div>
     );
 };
