@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Rechart from '../Rechart/Rechart';
 
 const QuestioRechart = () => {
     // const {total}= rechart  
@@ -7,7 +8,11 @@ const QuestioRechart = () => {
     // console.log(loadForRechart.data);
     return (
         <div>
-            {/* <h1>total: ${total}</h1> */}
+            {
+                loadForRechart.data.map(rechart => <Rechart
+                    rechart= {rechart}
+                ></Rechart>)
+            }
         </div>
     );
 };
