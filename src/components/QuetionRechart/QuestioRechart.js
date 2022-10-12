@@ -9,7 +9,7 @@ const QuestioRechart = () => {
   return (
     <div>
       <h3 className="flex justify-center text-lg  dark:bg-gray-700 dark:text-gray-100 font-bold py-3">
-        Let's Quiz Analysis{" "}
+        Let's Quiz Analysis
       </h3>
       <div className="flex  dark:text-gray-700 py-5 justify-center">
         <LineChart
