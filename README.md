@@ -1,8 +1,9 @@
 ## The Quiz Repository
 * An E-quiz platform for taking high quality Quiz 
 
+Live Link -> https://stalwart-gingersnap-2bd26a.netlify.app/
+
 ```bash
-Live Link -> 
 Hosted in Netlify -> The Quiz
 ```
 
@@ -19,4 +20,4 @@ Documentation Link -> https://reactjs.org/docs/context.html#api
 Tailwind Components -> Mamba UI Kitwind -> https://www.mambaui.com/components
 
 ### Other Resources
-Icon -> HeroIcon  Photos -> https://heroicons.com/
+HeroIcon  -> https://heroicons.com/
